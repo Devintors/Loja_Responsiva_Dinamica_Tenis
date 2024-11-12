@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300;400;500;600;700;800&family=Satisfy&display=swap");
+
+/* Global Styles */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 6rem 6%;
+}
+
+.section__title {
+    font-size: 2.25rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Button Styles */
+.btn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    background-color: #3d572f;
+    border: none;
+    color: #ffffff;
+    font-size: 0.813rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: #96d674;
+    color: #0f0f0f;
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    border: 1px solid #3d572f;
+    color: #0f0f0f;
+}
+
+/* Popular Section */
+.populares {
+    text-align: center;
+}
+
+.titulos {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.subtitulo-secao {
+    font-size: 1.25rem;
+    color: #3d572f;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.titulo-secao {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0f0f0f;
+}
+
+
+
+
+
+
+
+/*Separação de loja*/
+
+.sapatos-populares {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.camisas-populares {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+.cartao-popular {
+    width: 220px; /* Ajustado para ficar menor */
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.cartao-popular:hover {
+    transform: translateY(-10px);
+}
+
+.imagem-cartao-popular img {
+    width: 100%;
+}
+
+.compartilhar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #eeeeee;
+    border-radius: 40%;
+    height: 30px;
+    margin-top: -50px;
+}
+
+.bloco-cartao a {
+    color: #0f0f0f;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.bloco-cartao a:hover {
+    color: #3d572f;
+}
+
+.conteudo-cartao-popular {
+    padding: 1rem;
+    text-align: center;
+}
+
+.tamanho {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.numero {
+    width: 30px; /* Ajustado para ficar menor */
+    height: 30px; /* Ajustado para ficar menor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.numero-desativado {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+}
+
+.numero:hover {
+    background-color: #96d674;
+    color: #ffffff;
+}
+
+.descricao-cartao {
+    margin-bottom: 1rem;
+}
+
+.descricao-cartao h3 {
+    font-size: 1rem; /* Ajustado para ficar menor */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #0f0f0f;
+}
+
+.descricao-cartao span {
+    font-size: 0.813rem;
+    font-weight: 300;
+    color: #3d572f;
+}
+
+.descricao-cartao p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3d572f;
+}
+
+.botao-cartoes {
+    margin-top: 1rem;
+}
+
+.botao-todos {
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #0f0f0f;
+    transition: color .5s;
+    z-index: 1;
+    background: #ffffff;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: 500;
+    color: #0f0f0f;
+}
+
+.botao-todos::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #0f0f0f;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.botao-todos:hover {
+    color: #ffffff;
+}
+
+.botao-todos::before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.botao-todos:hover::before {
+    top: -30px;
+    left: -30px;
+}
+
+.botao-todos:active::before {
+    background: #0f0f0f;
+    transition: background 0s;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    .cartao-popular {
+        width: 180px; /* Ajustado para ficar menor */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 3rem 2%;
+    }
+
+    .section__title {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo-secao {
+        font-size: 1rem;
+    }
+
+    .sapatos-populares {
+        gap: 1rem;
+    }
+
+    .cartao-popular {
+        width: 100%;
+        max-width: 160px; /* Ajustado para ficar menor */
+        border: 1px solid #dcdcdc;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .conteudo-cartao-popular {
+        padding: 0.5rem;
+    }
+
+    .tamanho {
+        gap: 0.25rem;
+    }
+
+    .numero {
+        width: 25px; /* Ajustado para ficar menor */
+        height: 25px; /* Ajustado para ficar menor */
+    }
+
+    .descricao-cartao h3 {
+        font-size: 0.813rem; /* Ajustado para ficar menor */
+    }
+
+    .descricao-cartao span {
+        font-size: 0.813rem;
+    }
+
+    .descricao-cartao p {
+        font-size: 0.813rem;
+    }
+
+    .botao-cartoes {
+        font-size: 0.813rem;
+        padding: 0.5rem;
+    }
+
+    .botao-todos {
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 0.813rem;
+    }
+
+    .botao-todos:before {
+        font-size: 1rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.button-cards {
+ --color: #000000;
+ font-family: inherit;
+ display: inline-block;
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ position: relative;
+ overflow: hidden;
+ border: 1px solid black;
+ transition: color .5s;
+ z-index: 1;
+ background: #fff;
+ font-size: 17px;
+ border-radius: 3px;
+ font-weight: 500;
+ color: black;
+}
+
+.button-cards:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: black;
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+.button-cards:hover {
+ color: #fff;
+}
+
+.button-cards:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+.button-cards:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+.button-cards:active:before {
+ background: #0f0f0f;
+ transition: background 0s;
+}
+
+

@@ -1,0 +1,323 @@
+:root {
+  --black: #333333;
+  --black-2: #161616;
+  --gray: #000000;
+  --white: #ffffff;
+}
+
+.product-card {
+  position: relative;
+  max-width: 220px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.logo-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-cart img {
+  height: 56px;
+  object-fit: cover;
+}
+
+.logo-cart i {
+  font-size: 28px;
+  color: var(--gray);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo-cart i:hover {
+  color: var(--black);
+}
+
+.main-images {
+  position: relative;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.main-images img {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  transform: rotate(-18deg);
+  z-index: -1;
+  left: 4px;
+  top: -15px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.main-images img.active {
+  opacity: 1;
+}
+
+.info {
+  text-align: center;
+}
+
+.info .name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black-2);
+  margin-bottom: 8px;
+}
+
+.info p {
+  font-size: 0.813rem;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.info .stars i {
+  font-size: 16px;
+  margin: 0 -1px;
+  color: var(--black);
+}
+
+.color-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.color-option {
+  display: flex;
+  align-items: center;
+}
+
+.color-option .color {
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-right: 4.8px;
+}
+
+.color-option .circles {
+  display: flex;
+}
+
+.color-option .circle {
+  height: 16px;
+  width: 16px;
+  background: var(--color);
+  border-radius: 50%;
+  margin: 0 4.8px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.color-option .circle.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--color);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.price .price_num {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.price .price_letter {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: -16px;
+  color: var(--gray);
+}
+
+.button-cardss {
+  --color: #000000;
+  font-family: inherit;
+  display: inline-block;
+  height: 2.6em;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+  transition: color .5s;
+  z-index: 1;
+  width: 80%;
+  background: #fff;
+  font-size: 17px;
+  border-radius: 3px;
+  font-weight: 500;
+  color: black;
+  margin-top: 15px;
+}
+
+.button-cardss:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: black;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.button-cardss:hover {
+  color: #fff;
+}
+
+.button-cardss:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+}
+
+.button-cardss:hover:before {
+  top: -50px;
+  left: -8px;
+}
+
+.button-cardss:active:before {
+  background: #0f0f0f;
+  transition: background 0s;
+}
+
+.cartao-popular.escondido {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .sapatos-mais-populares {
+      gap: 0.8rem;
+  }
+
+  .product-card {
+      max-width: 170px;
+      padding: 7px;
+      border-radius: 8px;
+  }
+
+  .main-images {
+      height: 80px;
+      margin-top: 12px;
+  }
+
+  .main-images img {
+      height: 80px;
+      top: -12px;
+  }
+
+  .info .name {
+      font-size: 0.875rem;
+  }
+
+  .info p {
+      font-size: 0.75rem;
+  }
+
+  .info .stars i {
+      font-size: 14px;
+  }
+
+  .color-price {
+      margin-top: 8px;
+  }
+
+  .color-option .color {
+      font-size: 0.75rem;
+  }
+
+  .price .price_num {
+      font-size: 0.875rem;
+  }
+
+  .price .price_letter {
+      font-size: 0.75rem;
+      margin-top: -12px;
+  }
+
+  .button-cardss {
+      height: 2.4em;
+      line-height: 2.4em;
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .sapatos-mais-populares {
+      gap: 0.8rem;
+  }
+
+  .product-card {
+      max-width: 170px;
+      padding: 3px;
+      border-radius: 8px;
+  }
+
+  .main-images {
+      height: 80px;
+      margin-top: 12px;
+  }
+
+  .main-images img {
+      height: 80px;
+      top: -12px;
+  }
+
+  .info .name {
+      font-size: 0.875rem;
+  }
+
+  .info p {
+      font-size: 0.75rem;
+  }
+
+  .info .stars i {
+      font-size: 14px;
+  }
+
+  .color-price {
+      margin-top: 8px;
+  }
+
+  .color-option .color {
+      font-size: 0.75rem;
+  }
+
+  .price .price_num {
+      font-size: 0.875rem;
+  }
+
+  .price .price_letter {
+      font-size: 0.75rem;
+      margin-top: -12px;
+  }
+
+  .button-cardss {
+      height: 2.4em;
+      line-height: 2.4em;
+      font-size: 15px;
+  }
+}

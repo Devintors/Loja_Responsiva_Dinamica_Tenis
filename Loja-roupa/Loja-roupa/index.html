@@ -1,0 +1,2299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+
+    <link rel="stylesheet" href="menu-lateral.css">
+    <link rel="stylesheet" href="rodapé.css">
+    <link rel="stylesheet" href="loja1-camisas-card.css">
+    <link rel="stylesheet" href="loja1-tenis-card.css">
+    <link rel="stylesheet" href="Slide-1.css">
+    <link rel="stylesheet" href="loja3-card.css">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="carrossel-seleção.css">
+    <link rel="stylesheet" href="rodapé.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    
+    
+</head>
+<style>
+    body{
+        -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+/*barra preta parte superio escrito devintors*/
+.responsive-div {
+           
+            background-color: rgb(0, 0, 0);
+            font-size: 3.3rem;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+            font-size: 3.3rem;
+            text-align: center;
+            z-index: 10;
+            padding: 7px;
+            border: 2px solid #000000;
+            font-family: 'Playfair Display', serif;
+        }
+        .cor-dev{
+            color: #ffffff;
+            font-family: 'Playfair Display', serif;
+        }
+
+        @media (max-width: 600px) {
+            .responsive-div {
+                font-size: 2rem;
+                padding: 7px;
+                
+            }
+
+            .responsive-div {
+    position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        }
+
+        @media (max-width: 400px) {
+            .responsive-div {
+                font-size: 1.5rem;
+                padding: 10px;
+               
+            }
+        }
+/* fim barra preta parte superio escrito devintors*/
+
+        .left-tenis {
+            position: relative;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px;
+        }
+        .left-tenis::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 5px;
+            background-color: #007aff;
+            position: absolute;
+            bottom: -8px;
+            border-radius: 20px;
+            left: 0;
+        }
+        .right-vermais {
+            cursor: pointer;
+            color: #007aff;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 17px;
+        }
+
+
+
+
+
+
+        .container-card {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            width: 95%; 
+            height: 120px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            border-radius: 8px; 
+            background-color: white; 
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+       
+
+        .img-card {
+            overflow: hidden;
+            border: 2px solid rgb(243, 243, 243);
+            width: 100px;
+            height: 100px; 
+            box-sizing: border-box;
+            border-radius: 8px; 
+            flex-shrink: 0;
+        }
+        .img-card::after{
+            content: "50%";
+            position: absolute;
+            top: 4px; 
+            left: 12%;
+            transform: translateX(-50%);
+            border-radius: 8px;
+            background: rgb(0, 190, 0); 
+            padding: 0 5px; 
+            color: white; 
+        }
+
+        .img-card img {
+            width: 100%;
+            height: 100%; 
+            object-fit: contain; 
+        }
+
+        .lado-direito {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+
+        .nome-item {
+            font-size: 18px; /* Alterado para px */
+            font-weight: 700; 
+            margin-bottom: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .preco-item {
+            font-size: 16px; /* Alterado para px */
+            color:  rgb(0, 190, 0);
+            font-weight: 700; 
+            margin-bottom: 5px;
+        }
+
+        .preco-item-desconto {
+            font-size: 13px; /* Alterado para px */
+            color: rgb(160, 160, 160);
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+
+        .parcelas-preco {
+            font-size: 14px; /* Alterado para px */
+            color: gray;
+            font-weight: 600; 
+            margin-bottom: 5px;
+        }
+
+        .parcelas {
+            font-size: 14px; /* Alterado para px */
+            color: rgb(8, 8, 8);
+            font-weight: 900; 
+        }
+
+        .estrelas-lado-direito {
+            display: flex;
+            align-items: center;
+            color: gold;
+            font-size: 13px;
+        }
+
+        .botao-ver-mais {
+            margin-left: 10px;
+            padding: 3px 8px;
+            background-color: rgb(0, 190, 0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 12px; /* Alterado para px */
+            cursor: pointer;
+        }
+
+        .botao-ver-mais:hover {
+            background-color: rgb(0, 150, 0);
+        }
+
+        .container-geral{
+            display: flex;
+            gap: 50px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        @media screen and (max-width:950px) {
+
+            .container-geral{
+            display: flex;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px;
+            overflow-x: auto;
+            
+        }
+
+        
+        .container-card {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            width: 105%; 
+            height: 120px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            border-radius: 8px; 
+            background-color: white; 
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        }
+    </style>
+
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+    
+    <div class="barra-lateral">
+        <div>
+            <div class="nome-pagina">
+                <img src="logo.png" alt="" width="50px" id="cloud" name="cloud-outline" style="border-radius: 20%;">
+                <span>Devintors</span>
+            </div>
+            <button class="botao">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>Procurar</span>
+            </button>
+        </div>
+    
+        <nav class="navegacao">
+            <ul>
+                <li>
+                    <a id="inicio" href="#">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="woman-outline"></ion-icon>
+                        <span>Peças Femininas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="man-outline"></ion-icon>
+                        <span>Peças Masculinas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="shirt-outline"></ion-icon>
+                        <span>Infantil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="watch-outline"></ion-icon>
+                        <span>Acessórios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="footsteps-outline"></ion-icon>
+                        <span>Calçados</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                        <span>Bolsa</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div>
+            <div class="linha"></div>
+    
+            <div class="modo-escuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Modo Noite</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <img src="logo.png" alt="">
+                <div class="info-usuario">
+                    <div class="nome-email">
+                        <span class="nome">Devintors</span>
+                        <span class="email">devintorsn@gmail.com</span>
+                    </div>
+                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    
+
+
+    <main>
+
+        <div class="responsive-div">
+             <span class="cor-dev"></span>DEVINTOR<span class="cor-dev">S</span>
+        </div>
+
+
+            
+        <section class="slider">
+            <div class="slider-content">
+                
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+        
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="slide1.png" alt="slide 1">
+                    <img class="img-mobile" src="slide1.png" alt="slide 1">
+                </div>
+        
+                <div class="slide-box">
+                    <img class="img-desktop" src="slide2.png" alt="slide 3">
+                    <img class="img-mobile" src="slide2.png" alt="slide 1">
+                </div>
+        
+                <div class="slide-box">
+                    <img class="img-desktop" src="slide3.png" alt="slide 3">
+                    <img class="img-mobile" src="slide3.png" alt="slide 3">
+                </div>
+        
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+        
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+        
+
+    <section class="populares secao bd-container" id="populares">
+        <div class="conteudo-populares">
+            
+
+
+    
+    
+    <div class="titulos">
+        <span class="subtitulo-secao">aproveite</span>
+        <h1 class="titulo-secao">Os mais populares</h1>
+    </div>
+
+    <div class="carousel-container">
+        <button class="carousel-button left" id="prevBtn">&#10094;</button>
+        <div class="product-carousel">
+            <div class="product-item">
+                <img src="Tenis-loja2/tenis1.png" alt="Produto 1">
+            </div>
+           
+            <div class="product-item">
+                <img src="camisetas-loja1/camiseta7.png" alt="Produto 2">
+            </div>
+            <div class="product-item">
+                <img src="Tenis-loja2/tenis8.png" alt="Produto 3">
+            </div>
+            <div class="product-item">
+                <img src="moletom2.png" alt="Produto 4">
+            </div>
+            <div class="product-item">
+                <img src="produto5.jpg" alt="Produto 5">
+            </div>
+            <div class="product-item">
+                <img src="produto1.jpg" alt="Produto 1">
+            </div>
+            <div class="product-item">
+                <img src="produto2.jpg" alt="Produto 2">
+            </div>
+            <div class="product-item">
+                <img src="produto3.jpg" alt="Produto 3">
+            </div>
+            <div class="product-item">
+                <img src="produto4.jpg" alt="Produto 4">
+            </div>
+            <div class="product-item">
+                <img src="produto5.jpg" alt="Produto 5">
+            </div>
+            <div class="product-item">
+                <img src="produto1.jpg" alt="Produto 1">
+            </div>
+            <div class="product-item">
+                <img src="produto2.jpg" alt="Produto 2">
+            </div>
+            <div class="product-item">
+                <img src="produto3.jpg" alt="Produto 3">
+            </div>
+            <div class="product-item">
+                <img src="produto4.jpg" alt="Produto 4">
+            </div>
+            <div class="product-item">
+                <img src="produto5.jpg" alt="Produto 5">
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+        <button class="carousel-button right" id="nextBtn">&#10095;</button>
+    </div>
+    <div class="camisas-mais-populares  container-cards">
+
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images-camisas" id="mudar-img">
+            <img class="blue active" src="camisetas-loja1/camiseta1.png" alt="blue">
+            <img class="black" src="camisetas-loja1/camiseta2.png" alt="black">
+            <img class="yellow" src="camisetas-loja1/camiseta3.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR MAX</span>
+            <p>O Nike Air Max oferece um conforto incrível e um estilo clássico.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 299,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images-camisas" id="mudar-img">
+            <img class="blue active" src="camisetas-loja1/camiseta4.png" alt="blue">
+            <img class="black" src="camisetas-loja1/camiseta5.png" alt="black">
+            <img class="yellow" src="camisetas-loja1/camiseta6.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR MAX</span>
+            <p>O Nike Air Max oferece um conforto incrível e um estilo clássico.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 299,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images-camisas" id="mudar-img">
+            <img class="blue active" src="camisetas-loja1/camiseta7.png" alt="blue">
+            <img class="black" src="camisetas-loja1/camiseta8.png" alt="black">
+            <img class="yellow" src="camisetas-loja1/camiseta9.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR MAX</span>
+            <p>O Nike Air Max oferece um conforto incrível e um estilo clássico.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 299,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images-camisas" id="mudar-img">
+            <img class="blue active" src="camisetas-loja1/camiseta10.png" alt="blue">
+            <img class="black" src="camisetas-loja1/camiseta11.png" alt="black">
+            <img class="yellow" src="camisetas-loja1/camiseta12.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR MAX</span>
+            <p>O Nike Air Max oferece um conforto incrível e um estilo clássico.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 299,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images-camisas" id="mudar-img">
+            <img class="blue active" src="camisetas-loja1/camiseta1.png" alt="blue">
+            <img class="black" src="camisetas-loja1/camiseta2.png" alt="black">
+            <img class="yellow" src="camisetas-loja1/camiseta3.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR MAX</span>
+            <p>O Nike Air Max oferece um conforto incrível e um estilo clássico.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 299,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images-camisas" id="mudar-img">
+            <img class="blue active" src="camisetas-loja1/camiseta4.png" alt="blue">
+            <img class="black" src="camisetas-loja1/camiseta5.png" alt="black">
+            <img class="yellow" src="camisetas-loja1/camiseta6.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR MAX</span>
+            <p>O Nike Air Max oferece um conforto incrível e um estilo clássico.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 299,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images-camisas" id="mudar-img">
+            <img class="blue active" src="camisetas-loja1/camiseta7.png" alt="blue">
+            <img class="black" src="camisetas-loja1/camiseta8.png" alt="black">
+            <img class="yellow" src="camisetas-loja1/camiseta9.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR MAX</span>
+            <p>O Nike Air Max oferece um conforto incrível e um estilo clássico.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 299,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images-camisas" id="mudar-img">
+            <img class="blue active" src="camisetas-loja1/camiseta10.png" alt="blue">
+            <img class="black" src="camisetas-loja1/camiseta11.png" alt="black">
+            <img class="yellow" src="camisetas-loja1/camiseta12.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR MAX</span>
+            <p>O Nike Air Max oferece um conforto incrível e um estilo clássico.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 299,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+    
+</div>
+</div>
+
+<div class="container-botao">
+    <button id="toggle-button-camisas">Ver mais</button>
+</div>
+</div>
+
+<div class="sapatos-mais-populares  container-cards">
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images" id="mudar-img">
+            <img class="blue active" src="Tenis-loja2/tenis2.png" alt="blue">
+            <img class="black" src="Tenis-loja2/tenis8.png" alt="black">
+            <img class="yellow" src="Tenis-loja2/tenis3.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR MAX</span>
+            <p>O Nike Air Max oferece um conforto incrível e um estilo clássico, perfeito para qualquer ocasião.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 299,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images" id="mudar-img">
+            <img class="blue active" src="Tenis-loja2/tenis4.png" alt="blue">
+            <img class="black" src="Tenis-loja2/tenis5.png" alt="black">
+            <img class="yellow" src="Tenis-loja2/tenis6.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE AIR ZOOM</span>
+            <p>Projetado para velocidade, o Nike Air Zoom traz leveza e performance em um design inovador.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 399,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images" id="mudar-img">
+            <img class="blue active" src="Tenis-loja2/tenis7.png" alt="blue">
+            <img class="black" src="Tenis-loja2/tenis1.png" alt="black">
+            <img class="yellow" src="Tenis-loja2/tenis3.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE REVOLUTION</span>
+            <p>O Nike Revolution é ideal para corridas, proporcionando conforto e suporte durante todo o percurso.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 259,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images" id="mudar-img">
+            <img class="blue active" src="Tenis-loja2/tenis6.png" alt="blue">
+            <img class="black" src="Tenis-loja2/tenis8.png" alt="black">
+            <img class="yellow" src="Tenis-loja2/tenis7.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE PEGASUS</span>
+            <p>Com um design leve e acolchoado, o Nike Pegasus oferece uma corrida confortável e suave.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 349,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images" id="mudar-img">
+            <img class="blue active" src="Tenis-loja2/tenis6.png" alt="blue">
+            <img class="black" src="Tenis-loja2/tenis8.png" alt="black">
+            <img class="yellow" src="Tenis-loja2/tenis7.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE PEGASUS</span>
+            <p>Com um design leve e acolchoado, o Nike Pegasus oferece uma corrida confortável e suave.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 349,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images" id="mudar-img">
+            <img class="blue active" src="Tenis-loja2/tenis6.png" alt="blue">
+            <img class="black" src="Tenis-loja2/tenis8.png" alt="black">
+            <img class="yellow" src="Tenis-loja2/tenis7.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE PEGASUS</span>
+            <p>Com um design leve e acolchoado, o Nike Pegasus oferece uma corrida confortável e suave.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 349,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+
+
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="logo.png" alt="logo">
+            <i class="fa-brands fa-shopify"></i>
+        </div>
+        <div class="main-images" id="mudar-img">
+            <img class="blue active" src="Tenis-loja2/tenis6.png" alt="blue">
+            <img class="black" src="Tenis-loja2/tenis8.png" alt="black">
+            <img class="yellow" src="Tenis-loja2/tenis7.png" alt="yellow">
+        </div>
+        <div class="info">
+            <span class="name">NIKE PEGASUS</span>
+            <p>Com um design leve e acolchoado, o Nike Pegasus oferece uma corrida confortável e suave.</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color-option">
+                <span class="color">Cor:</span>
+                <div class="circles">
+                    <span class="circle blue active" data-option="blue" style="--color: #0071c7;"></span>
+                    <span class="circle black" data-option="black" style="--color: #131112;"></span>
+                    <span class="circle yellow" data-option="yellow" style="--color: #f5da00;"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">R$ 349,90</span>
+            </div>
+        </div>
+        <button class="button-cardss">Informações</button>
+    </div>
+   
+    </div>
+    
+    <div class="container-botao">
+        <button id="toggle-button-sapatos">Ver mais</button>
+    </div>
+
+
+
+<div class="container-geral">
+
+
+    <div class="container-card-coluna">
+
+        <div class="contain">
+            <div class="left-tenis">Moletons Masculino</div>
+            <div class="right-vermais">Ver mais</div>
+        </div>
+        <div class="container-card">
+            <div class="img-card">
+                <img src="moletom1.png" alt="Imagem do Tênis">
+            </div>
+            <div class="lado-direito">
+                <div class="nome-item">Moletom-Nike</div>
+                <div class="preco-item">R$ 118,90 <span class="preco-item-desconto">R$ 219,90</span></div>
+                <div class="parcelas-preco">em até <span class="parcelas">12x</span> de <span class="parcelas">R$ 12,64</span></div>
+                <div class="estrelas-lado-direito">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <button class="botao-ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-card">
+            <div class="img-card">
+                <img src="moletom1.png" alt="Imagem do Tênis">
+            </div>
+            <div class="lado-direito">
+                <div class="nome-item">Moletom-Nike</div>
+                <div class="preco-item">R$ 118,90 <span class="preco-item-desconto">R$ 219,90</span></div>
+                <div class="parcelas-preco">em até <span class="parcelas">12x</span> de <span class="parcelas">R$ 12,64</span></div>
+                <div class="estrelas-lado-direito">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <button class="botao-ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-card">
+            <div class="img-card">
+                <img src="moletom1.png" alt="Imagem do Tênis">
+            </div>
+            <div class="lado-direito">
+                <div class="nome-item">Moletom-Nike</div>
+                <div class="preco-item">R$ 118,90 <span class="preco-item-desconto">R$ 219,90</span></div>
+                <div class="parcelas-preco">em até <span class="parcelas">12x</span> de <span class="parcelas">R$ 12,64</span></div>
+                <div class="estrelas-lado-direito">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <button class="botao-ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-card-coluna">
+
+        <div class="contain">
+            <div class="left-tenis">Moletons Feminino</div>
+            <div class="right-vermais">Ver mais</div>
+        </div>
+        <div class="container-card">
+            <div class="img-card">
+                <img src="moletom1.png" alt="Imagem do Tênis">
+            </div>
+            <div class="lado-direito">
+                <div class="nome-item">Moletom-Nike</div>
+                <div class="preco-item">R$ 118,90 <span class="preco-item-desconto">R$ 219,90</span></div>
+                <div class="parcelas-preco">em até <span class="parcelas">12x</span> de <span class="parcelas">R$ 12,64</span></div>
+                <div class="estrelas-lado-direito">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <button class="botao-ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-card">
+            <div class="img-card">
+                <img src="moletom1.png" alt="Imagem do Tênis">
+            </div>
+            <div class="lado-direito">
+                <div class="nome-item">Moletom-Nike</div>
+                <div class="preco-item">R$ 118,90 <span class="preco-item-desconto">R$ 219,90</span></div>
+                <div class="parcelas-preco">em até <span class="parcelas">12x</span> de <span class="parcelas">R$ 12,64</span></div>
+                <div class="estrelas-lado-direito">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <button class="botao-ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-card">
+            <div class="img-card">
+                <img src="moletom1.png" alt="Imagem do Tênis">
+            </div>
+            <div class="lado-direito">
+                <div class="nome-item">Moletom-Nike</div>
+                <div class="preco-item">R$ 118,90 <span class="preco-item-desconto">R$ 219,90</span></div>
+                <div class="parcelas-preco">em até <span class="parcelas">12x</span> de <span class="parcelas">R$ 12,64</span></div>
+                <div class="estrelas-lado-direito">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <button class="botao-ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="container-card-coluna">
+        <div class="contain">
+            <div class="left-tenis">Moletons Infantil</div>
+            <div class="right-vermais">Ver mais</div>
+        </div>
+        <div class="container-card">
+            <div class="img-card">
+                <img src="moletom1.png" alt="Imagem do Tênis">
+            </div>
+            <div class="lado-direito">
+                <div class="nome-item">Moletom-Nike</div>
+                <div class="preco-item">R$ 118,90 <span class="preco-item-desconto">R$ 219,90</span></div>
+                <div class="parcelas-preco">em até <span class="parcelas">12x</span> de <span class="parcelas">R$ 12,64</span></div>
+                <div class="estrelas-lado-direito">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <button class="botao-ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-card">
+            <div class="img-card">
+                <img src="moletom1.png" alt="Imagem do Tênis">
+            </div>
+            <div class="lado-direito">
+                <div class="nome-item">Moletom-Nike</div>
+                <div class="preco-item">R$ 118,90 <span class="preco-item-desconto">R$ 219,90</span></div>
+                <div class="parcelas-preco">em até <span class="parcelas">12x</span> de <span class="parcelas">R$ 12,64</span></div>
+                <div class="estrelas-lado-direito">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <button class="botao-ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-card">
+            <div class="img-card">
+                <img src="moletom1.png" alt="Imagem do Tênis">
+            </div>
+            <div class="lado-direito">
+                <div class="nome-item">Moletom-Nike</div>
+                <div class="preco-item">R$ 118,90 <span class="preco-item-desconto">R$ 219,90</span></div>
+                <div class="parcelas-preco">em até <span class="parcelas">12x</span> de <span class="parcelas">R$ 12,64</span></div>
+                <div class="estrelas-lado-direito">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <button class="botao-ver-mais">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+
+
+</div>
+
+
+
+
+
+
+  
+   
+
+
+            
+        
+       
+        
+       
+
+        <!-- ICONS -->
+        
+        <div class="inicio">
+            <div class="sub-inicio">
+                <div class="texto-inicio">
+                    <h1>O Melhor em Tênis Está Aqui!</h1>
+                    <p>Venha conhecer as novidades da nossa loja de tênis. Temos tudo para você andar com muito estilo e conforto. Aproveite nossas ofertas exclusivas e produtos de alta qualidade!</p>
+                    
+                    
+                    <a href="#" class="botao-inicio">Saiba Mais</a>
+                </div>
+                <div class="img-container">
+                    <div class="circulo"></div>
+                    <div class="img-inicio">
+                        <img src="ney.png" alt="Imagem Festa Junina">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--
+<div class="titulos">
+    <span class="subtitulo-secao">aproveite</span>
+    <h1 class="titulo-secao">Os mais populares</h1>
+</div>
+-->
+<div class="swiper-container">
+        
+    <div class="contain">
+        <div class="left-tenis">Tênis Esportivo</div>
+        <div class="right-vermais">Ver mais</div>
+    </div>
+        <div class="swiper-wrapper">
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img1.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img1.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img2.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img3.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img4.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img4.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img4.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            <!-- Repita o bloco de artigo para outros cards -->
+        </div>
+        <!-- Adicione controles de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+ 
+    
+<div class="swiper-container">
+        
+    <div class="contain">
+        <div class="left-tenis">Tênis Esportivo</div>
+        <div class="right-vermais">Ver mais</div>
+    </div>
+        <div class="swiper-wrapper">
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img1.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img1.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img2.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img3.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img4.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img4.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+    
+            <article class="card swiper-slide">
+                <div class="card__img">
+                    <img src="img4.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+                    <div>
+                        <span class="card__preci card__preci--before">$990.00</span>
+                        <span class="card__preci card__preci--now">$749.00</span>
+                    </div>
+                    <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </article>
+            <!-- Repita o bloco de artigo para outros cards -->
+        </div>
+        <!-- Adicione controles de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+<div class="sapatos-populares">
+    <article class="cartao-popular">
+        <div class="imagem-cartao-popular">
+            <img src="Tenis-loja2/tenis1.png" alt="sapato feminino">
+        </div>
+        <div class="compartilhar">
+            
+        </div>
+        <div class="conteudo-cartao-popular">
+            <div class="tamanho">
+                <div class="numero">34</div>
+                <div class="numero numero-desativado">35</div>
+                <div class="numero">36</div>
+                <div class="numero">37</div>
+                <div class="numero">38</div>
+            </div>
+            <div class="descricao-cartao">
+                <h3>Adidas Runner <span>feminino</span></h3>
+                <p>R$ 249,00</p>
+            </div>
+            <button class="button-cards"> Informações</button>
+        </div>
+    </article>
+    <article class="cartao-popular">
+        <div class="imagem-cartao-popular">
+            <img src="Tenis-loja2/tenis2.png" alt="sapato feminino">
+        </div>
+        <div class="compartilhar">
+          
+        </div>
+        <div class="conteudo-cartao-popular">
+            <div class="tamanho">
+                <div class="numero">34</div>
+                <div class="numero numero-desativado">35</div>
+                <div class="numero">36</div>
+                <div class="numero">37</div>
+                <div class="numero">38</div>
+            </div>
+            <div class="descricao-cartao">
+                <h3>Puma Flex <span>masculino</span></h3>
+                <p>R$ 299,00</p>
+            </div>
+            <button class="button-cards"> Informações</button>
+        </div>
+    </article>
+    <article class="cartao-popular">
+        <div class="imagem-cartao-popular">
+            <img src="Tenis-loja2/tenis3.png" alt="sapato feminino">
+        </div>
+        <div class="compartilhar">
+           
+        </div>
+        <div class="conteudo-cartao-popular">
+            <div class="tamanho">
+                <div class="numero">34</div>
+                <div class="numero numero-desativado">35</div>
+                <div class="numero">36</div>
+                <div class="numero">37</div>
+                <div class="numero">38</div>
+            </div>
+            <div class="descricao-cartao">
+                <h3>Reebok Classic <span>feminino</span></h3>
+                <p>R$ 199,00</p>
+            </div>
+            <button class="button-cards"> Informações</button>
+        </div>
+    </article>
+    <article class="cartao-popular">
+        <div class="imagem-cartao-popular">
+            <img src="Tenis-loja2/tenis4.png" alt="sapato feminino">
+        </div>
+        <div class="compartilhar">
+           
+        </div>
+        <div class="conteudo-cartao-popular">
+            <div class="tamanho">
+                <div class="numero">34</div>
+                <div class="numero numero-desativado">35</div>
+                <div class="numero">36</div>
+                <div class="numero">37</div>
+                <div class="numero">38</div>
+            </div>
+            <div class="descricao-cartao">
+                <h3>Asics Gel <span>masculino</span></h3>
+                <p>R$ 279,00</p>
+            </div>
+            <button class="button-cards"> Informações</button>
+        </div>
+    </article>
+    <article class="cartao-popular escondido">
+        <div class="imagem-cartao-popular">
+            <img src="Tenis-loja2/tenis5.png" alt="sapato feminino">
+        </div>
+        <div class="compartilhar">
+           
+        </div>
+        <div class="conteudo-cartao-popular">
+            <div class="tamanho">
+                <div class="numero">34</div>
+                <div class="numero numero-desativado">35</div>
+                <div class="numero">36</div>
+                <div class="numero">37</div>
+                <div class="numero">38</div>
+            </div>
+            <div class="descricao-cartao">
+                <h3>New Balance 574 <span>masculino</span></h3>
+                <p>R$ 319,00</p>
+            </div>
+            <button class="button-cards"> Informações</button>
+        </div>
+    </article>
+    <article class="cartao-popular escondido">
+        <div class="imagem-cartao-popular">
+            <img src="Tenis-loja2/tenis6.png" alt="sapato feminino">
+        </div>
+        <div class="compartilhar">
+            
+        </div>
+        <div class="conteudo-cartao-popular">
+            <div class="tamanho">
+                <div class="numero">34</div>
+                <div class="numero numero-desativado">35</div>
+                <div class="numero">36</div>
+                <div class="numero">37</div>
+                <div class="numero">38</div>
+            </div>
+            <div class="descricao-cartao">
+                <h3>Skechers Go Walk <span>masculino</span></h3>
+                <p>R$ 229,00</p>
+            </div>
+            <button class="button-cards"> Informações</button>
+        </div>
+    </article>
+    <article class="cartao-popular escondido">
+        <div class="imagem-cartao-popular">
+            <img src="Tenis-loja2/tenis7.png" alt="sapato feminino">
+        </div>
+        <div class="compartilhar">
+           
+        </div>
+        <div class="conteudo-cartao-popular">
+            <div class="tamanho">
+                <div class="numero">34</div>
+                <div class="numero numero-desativado">35</div>
+                <div class="numero">36</div>
+                <div class="numero">37</div>
+                <div class="numero">38</div>
+            </div>
+            <div class="descricao-cartao">
+                <h3>Mizuno Wave <span>masculino</span></h3>
+                <p>R$ 259,00</p>
+            </div>
+            <button class="button-cards"> Informações</button>
+        </div>
+    </article>
+    <article class="cartao-popular escondido">
+        <div class="imagem-cartao-popular">
+            <img src="Tenis-loja2/tenis8.png" alt="sapato feminino">
+        </div>
+        <div class="compartilhar">
+           
+        </div>
+        <div class="conteudo-cartao-popular">
+            <div class="tamanho">
+                <div class="numero">34</div>
+                <div class="numero numero-desativado">35</div>
+                <div class="numero">36</div>
+                <div class="numero">37</div>
+                <div class="numero">38</div>
+            </div>
+            <div class="descricao-cartao">
+                <h3>Fila Disruptor <span>masculino</span></h3>
+                <p>R$ 189,00</p>
+            </div>
+            <button class="button-cards"> Informações</button>
+        </div>
+    </article>
+</div>
+
+</div>
+
+
+
+
+
+
+<!--
+
+<div class="camisas-populares">
+<article class="cartao-popular">
+    <div class="imagem-cartao-popular">
+        <img src="moletom1.png" alt="sapato feminino">
+    </div>
+    <div class="compartilhar">
+       
+    </div>
+    <div class="conteudo-cartao-popular">
+        <div class="tamanho">
+            <div class="numero">34</div>
+            <div class="numero numero-desativado">35</div>
+            <div class="numero">36</div>
+            <div class="numero">37</div>
+            <div class="numero">38</div>
+        </div>
+        <div class="descricao-cartao">
+            <h3>Adidas Runner <span>feminino</span></h3>
+            <p>R$ 249,00</p>
+        </div>
+        <button class="button-cards"> Informações</button>
+    </div>
+</article>
+<article class="cartao-popular">
+    <div class="imagem-cartao-popular">
+        <img src="moletom2.png" alt="sapato feminino">
+    </div>
+    <div class="compartilhar">
+        
+    </div>
+    <div class="conteudo-cartao-popular">
+        <div class="tamanho">
+            <div class="numero">34</div>
+            <div class="numero numero-desativado">35</div>
+            <div class="numero">36</div>
+            <div class="numero">37</div>
+            <div class="numero">38</div>
+        </div>
+        <div class="descricao-cartao">
+            <h3>Puma Flex <span>masculino</span></h3>
+            <p>R$ 299,00</p>
+        </div>
+        <button class="button-cards"> Informações</button>
+    </div>
+</article>
+<article class="cartao-popular">
+    <div class="imagem-cartao-popular">
+        <img src="moletom3.png" alt="sapato feminino">
+    </div>
+    <div class="compartilhar">
+       
+    </div>
+    <div class="conteudo-cartao-popular">
+        <div class="tamanho">
+            <div class="numero">34</div>
+            <div class="numero numero-desativado">35</div>
+            <div class="numero">36</div>
+            <div class="numero">37</div>
+            <div class="numero">38</div>
+        </div>
+        <div class="descricao-cartao">
+            <h3>Reebok Classic <span>feminino</span></h3>
+            <p>R$ 199,00</p>
+        </div>
+        <button class="button-cards"> Informações</button>
+    </div>
+</article>
+<article class="cartao-popular">
+    <div class="imagem-cartao-popular">
+        <img src="moletom4.png" alt="sapato feminino">
+    </div>
+    <div class="compartilhar">
+       
+    </div>
+    <div class="conteudo-cartao-popular">
+        <div class="tamanho">
+            <div class="numero">34</div>
+            <div class="numero numero-desativado">35</div>
+            <div class="numero">36</div>
+            <div class="numero">37</div>
+            <div class="numero">38</div>
+        </div>
+        <div class="descricao-cartao">
+            <h3>Asics Gel <span>masculino</span></h3>
+            <p>R$ 279,00</p>
+        </div>
+        <button class="button-cards"> Informações</button>
+    </div>
+</article>
+<article class="cartao-popular escondido">
+    <div class="imagem-cartao-popular">
+        <img src="Tenis-loja2/tenis5.png" alt="sapato feminino">
+    </div>
+    <div class="compartilhar">
+       
+    </div>
+    <div class="conteudo-cartao-popular">
+        <div class="tamanho">
+            <div class="numero">34</div>
+            <div class="numero numero-desativado">35</div>
+            <div class="numero">36</div>
+            <div class="numero">37</div>
+            <div class="numero">38</div>
+        </div>
+        <div class="descricao-cartao">
+            <h3>New Balance 574 <span>masculino</span></h3>
+            <p>R$ 319,00</p>
+        </div>
+        <button class="button-cards"> Informações</button>
+    </div>
+</article>
+<article class="cartao-popular escondido">
+    <div class="imagem-cartao-popular">
+        <img src="Tenis-loja2/tenis6.png" alt="sapato feminino">
+    </div>
+    <div class="compartilhar">
+        
+    </div>
+    <div class="conteudo-cartao-popular">
+        <div class="tamanho">
+            <div class="numero">34</div>
+            <div class="numero numero-desativado">35</div>
+            <div class="numero">36</div>
+            <div class="numero">37</div>
+            <div class="numero">38</div>
+        </div>
+        <div class="descricao-cartao">
+            <h3>Skechers Go Walk <span>masculino</span></h3>
+            <p>R$ 229,00</p>
+        </div>
+        <button class="button-cards"> Informações</button>
+    </div>
+</article>
+<article class="cartao-popular escondido">
+    <div class="imagem-cartao-popular">
+        <img src="Tenis-loja2/tenis7.png" alt="sapato feminino">
+    </div>
+    <div class="compartilhar">
+       
+    </div>
+    <div class="conteudo-cartao-popular">
+        <div class="tamanho">
+            <div class="numero">34</div>
+            <div class="numero numero-desativado">35</div>
+            <div class="numero">36</div>
+            <div class="numero">37</div>
+            <div class="numero">38</div>
+        </div>
+        <div class="descricao-cartao">
+            <h3>Mizuno Wave <span>masculino</span></h3>
+            <p>R$ 259,00</p>
+        </div>
+        <button class="button-cards"> Informações</button>
+    </div>
+</article>
+<article class="cartao-popular escondido">
+    <div class="imagem-cartao-popular">
+        <img src="Tenis-loja2/tenis8.png" alt="sapato feminino">
+    </div>
+    <div class="compartilhar">
+       
+    </div>
+    <div class="conteudo-cartao-popular">
+        <div class="tamanho">
+            <div class="numero">34</div>
+            <div class="numero numero-desativado">35</div>
+            <div class="numero">36</div>
+            <div class="numero">37</div>
+            <div class="numero">38</div>
+        </div>
+        <div class="descricao-cartao">
+            <h3>Fila Disruptor <span>masculino</span></h3>
+            <p>R$ 189,00</p>
+        </div>
+        <button class="button-cards"> Informações</button>
+    </div>
+</article>
+</div>
+
+</div>
+  -->
+    </section>
+
+    
+
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top-about">
+                <h3>Sobre Nós</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non cum
+                    porro adipisci labore quia reprehenderit. Inventore autem eveniet
+                    laborum illum iusto veritatis numquam odit sed ut quam ratione,
+                    accusantium aliquam.
+                </p>
+                <p>
+                    <i class="fas fa-location-arrow"></i>
+                    <a href="#">Riversul-SP centro,Rua Riversul rvs sp 123</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    <a href="#">(15) 99999-9999</a>
+                </p>
+                <p>
+                    <i class="far fa-envelope"></i>
+                    <a href="#">atendimento@devintorsn@gmail.com</a>
+                </p>
+            </div>
+            <div class="footer-top-categories">
+                <h3>Categorias</h3>
+                <ul>
+                    <li>
+                        <a href="#">Roupas Femininas</a>
+                    </li>
+                    <li>
+                        <a href="#">Roupas Masculinas</a>
+                    </li>
+                    <li>
+                        <a href="#">Roupas Infantil</a>
+                    </li>
+                    <li>
+                        <a href="#">Acessórios</a>
+                    </li>
+                    <li>
+                        <a href="#">Calçados</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top-information">
+                <h3>Informações</h3>
+                <ul>
+                    <li>
+                        <a href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#">Entre em contato</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Pedidos e devoluções</a>
+                    </li>
+                    <li>
+                        <a href="#">Termos e condições</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Carrinho</a>
+                    </li>
+                    <li>
+                        <a href="#">Lista de Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#">Suporte</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  
+        <div class="footer-bottom">
+            <div class="footer-bottom-payments">
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-diners-club"></i>
+                <i class="fab fa-cc-amazon-pay"></i>
+                <i class="fab fa-cc-apple-pay"></i>
+            </div>
+            <p>Copyright &copy; 2024 DEVINTORS</p>
+        </div>
+    </footer>
+    
+    </main>
+
+
+   
+    <script>
+
+
+        // impede o zoom na tela com 2 click//
+        let lastTouchEnd = 0;
+
+document.addEventListener('touchend', (event) => {
+    const now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 450) {
+        event.preventDefault();
+    }
+    lastTouchEnd = now;
+}, false);
+// final que impede o zoom na tela com 2 click//
+
+
+
+const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        
+    },
+    breakpoints: {
+        350: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        600: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        750: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1300: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+    },
+});
+
+
+
+
+
+
+
+
+
+
+const productCarousel = document.querySelector('.product-carousel');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let scrollAmount = 0;
+const scrollPerClick = 120;
+
+nextBtn.addEventListener('click', () => {
+    productCarousel.scrollBy({ left: scrollPerClick, behavior: 'smooth' });
+});
+
+prevBtn.addEventListener('click', () => {
+    productCarousel.scrollBy({ left: -scrollPerClick, behavior: 'smooth' });
+});
+
+
+
+
+
+
+document.querySelectorAll('.product-card').forEach(card => {
+  const $options = card.querySelectorAll('.color-option .circle');
+  let $activeOption = card.querySelector('.color-option .circle.active');
+  let $activeImage = card.querySelector('#mudar-img .active');
+
+  const handleOptionClick = (event) => {
+    $activeOption.classList.remove('active');
+    $activeOption = event.target;
+    $activeOption.classList.add('active');
+    
+    const option = $activeOption.dataset.option;
+    $activeImage.classList.remove('active');
+    $activeImage = card.querySelector(`#mudar-img .${option}`);
+    $activeImage.classList.add('active');
+  }
+
+  $options.forEach(($ele) => {
+    $ele.addEventListener('click', handleOptionClick);
+  });
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    function setupToggle(buttonId, containerClass) {
+        const button = document.getElementById(buttonId);
+        const container = document.querySelector(`.${containerClass}`);
+        const productCards = container.querySelectorAll('.product-card');
+        let visibleCardsCount = 4; // Número de cartões visíveis inicialmente
+
+        function updateVisibleCardsCount() {
+            visibleCardsCount = window.innerWidth < 600 ? 2 : 4;
+        }
+
+        function hideExtraCards() {
+            productCards.forEach((card, index) => {
+                if (index >= visibleCardsCount) {
+                    card.classList.add('hidden');
+                } else {
+                    card.classList.remove('hidden');
+                }
+            });
+        }
+
+        function showAllCards() {
+            productCards.forEach(card => {
+                card.classList.remove('hidden');
+            });
+        }
+
+        function handleResize() {
+            updateVisibleCardsCount();
+            if (button.textContent === 'Ver mais') {
+                hideExtraCards();
+            }
+        }
+
+        updateVisibleCardsCount();
+        hideExtraCards(); // Ocultar os cartões adicionais inicialmente
+
+        window.addEventListener('resize', handleResize);
+
+        button.addEventListener('click', function() {
+            if (this.textContent === 'Ver mais') {
+                showAllCards();
+                this.textContent = 'Ver menos';
+            } else {
+                hideExtraCards();
+                this.textContent = 'Ver mais';
+            }
+        });
+    }
+
+    // Configure o botão para cada contêiner
+    setupToggle('toggle-button-camisas', 'camisas-mais-populares');
+    setupToggle('toggle-button-sapatos', 'sapatos-mais-populares');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+const cloud = document.getElementById("cloud");
+const barraLateral = document.querySelector(".barra-lateral");
+const spans = document.querySelectorAll(".barra-lateral span");
+const palanca = document.querySelector(".switch");
+const circulo = document.querySelector(".circulo");
+const menu = document.querySelector(".menu");
+const main = document.querySelector("main");
+
+menu.addEventListener("click", () => {
+    barraLateral.classList.toggle("max-barra-lateral");
+    if (barraLateral.classList.contains("max-barra-lateral")) {
+        menu.children[0].style.display = "none";
+        menu.children[1].style.display = "block";
+    } else {
+        menu.children[0].style.display = "block";
+        menu.children[1].style.display = "none";
+    }
+    if (window.innerWidth <= 320) {
+        barraLateral.classList.add("mini-barra-lateral");
+        main.classList.add("min-main");
+        spans.forEach((span) => {
+            span.classList.add("oculto");
+        });
+    }
+});
+
+palanca.addEventListener("click", () => {
+    let body = document.body;
+    body.classList.toggle("dark-mode");
+    body.classList.toggle("");
+    circulo.classList.toggle("prendido");
+});
+
+cloud.addEventListener("click", () => {
+    barraLateral.classList.toggle("mini-barra-lateral");
+    main.classList.toggle("min-main");
+    spans.forEach((span) => {
+        span.classList.toggle("oculto");
+    });
+});
+
+
+
+
+
+
+
+
+var radio = document.querySelector('.manual-btn')
+var cont = 1
+
+document.getElementById('radio1').checked = true
+
+setInterval(() => {
+    proximaImg()
+}, 5000)
+
+function proximaImg(){
+    cont++
+
+    if(cont > 3){
+        cont = 1 
+    }
+
+    document.getElementById('radio'+cont).checked = true
+}
+
+
+
+    </script>
+</body>
+</html>

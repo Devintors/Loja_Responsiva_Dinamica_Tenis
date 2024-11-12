@@ -1,0 +1,912 @@
+{
+  "Barra_Lateral": [
+    {
+      "Nome_Do_Icone": "home-outline",
+      "Nome": "Inicio",
+      "Link": "#"
+    },
+    {
+      "Nome_Do_Icone": "woman-outline",
+      "Nome": "Peças Femininas",
+      "Link": "#"
+    },
+    {
+      "Nome_Do_Icone": "man-outline",
+      "Nome": "Peças Masculinas",
+      "Link": "#"
+    },
+    {
+      "Nome_Do_Icone": "shirt-outline",
+      "Nome": "Infantil",
+      "Link": "#"
+    },
+    {
+      "Nome_Do_Icone": "watch-outline",
+      "Nome": "Acessórios",
+      "Link": "#"
+    },
+    {
+      "Nome_Do_Icone": "footsteps-outline",
+      "Nome": "Calçados",
+      "Link": "#"
+    },
+    {
+      "Nome_Do_Icone": "bag-handle-outline",
+      "Nome": "Bolsa",
+      "Link": "#"
+    }
+  ],
+  "Email": "devintorsn@gmail.com",
+  "Nome": "Devintors",
+  "Slides": [{}, {}],
+  "Card_Padrao": [
+    {
+      "Populares_Sessao": [
+        {
+          "Filtros": ["Tenis", "Camiseta", "Sapato"],
+          "Categoria_Rotacionadas": ["Tenis", "Sapato"],
+          "Produtos": {
+            "Tenis": [
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#FF0000", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "Renato Tubarao",
+                "Descricao": "O maior tubarao de todos os tempos",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "800,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "VANS OLD SKOOL",
+                "Descricao": "O Vans Old Skool oferece estilo clássico de skate e durabilidade.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "85,00",
+                "Categoria": "Tenis"
+              }
+            ],
+            "Camiseta": [
+              {
+                "Nome": "CAMISETA NIKE DRI-FIT",
+                "Descricao": "A camiseta Nike Dri-Fit mantém você seco e confortável durante os treinos.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#ffffff", "#000000"],
+                "Preco": "50,00",
+                "Categoria": "Camiseta"
+              },
+              {
+                "Nome": "CAMISETA ADIDAS ESSENTIALS",
+                "Descricao": "A camiseta Adidas Essentials oferece conforto e estilo para o dia a dia.",
+                "Estrelas": 4,
+                "Cores": ["#131112", "#f5da00", "#ff0000"],
+                "Preco": "45,00",
+                "Categoria": "Camiseta"
+              },
+              {
+                "Nome": "CAMISETA PUMA ACTIVE",
+                "Descricao": "A camiseta Puma Active é perfeita para atividades físicas e lazer.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#ff6600"],
+                "Preco": "48,00",
+                "Categoria": "Camiseta"
+              },
+              {
+                "Nome": "CAMISETA REEBOK CLASSIC",
+                "Descricao": "A camiseta Reebok Classic combina estilo retrô com conforto moderno.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#ffffff", "#ff0000"],
+                "Preco": "40,00",
+                "Categoria": "Camiseta"
+              },
+              {
+                "Nome": "CAMISETA ASICS TRAINING",
+                "Descricao": "A camiseta Asics Training oferece leveza e respirabilidade para treinos intensos.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#ffffff", "#131112"],
+                "Preco": "55,00",
+                "Categoria": "Camiseta"
+              },
+              {
+                "Nome": "CAMISETA NEW BALANCE LOGO",
+                "Descricao": "A camiseta New Balance Logo é versátil, ideal para o uso diário.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#ff6600", "#131112"],
+                "Preco": "42,00",
+                "Categoria": "Camiseta"
+              },
+              {
+                "Nome": "CAMISETA CONVERSE ALL STAR",
+                "Descricao": "A camiseta Converse All Star apresenta o icônico logo e um corte clássico.",
+                "Estrelas": 3,
+                "Cores": ["#131112", "#ff0000", "#ffffff"],
+                "Preco": "38,00",
+                "Categoria": "Camiseta"
+              },
+              {
+                "Nome": "CAMISETA VANS CLASSIC",
+                "Descricao": "A camiseta Vans Classic traz o estilo descontraído e atemporal da marca.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#ffffff"],
+                "Preco": "43,00",
+                "Categoria": "Camiseta"
+              }
+            ],
+            "Sapato": [
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#FF0000", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "Renato Tubarao",
+                "Descricao": "O maior tubarao de todos os tempos",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "800,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NIKE AIR MAX",
+                "Descricao": " O Nike Air Max oferece um conforto incrível e um estilo clássico.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "100,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ADIDAS ULTRABOOST",
+                "Descricao": "O Adidas Ultraboost oferece um retorno de energia superior e conforto máximo.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "120,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "PUMA RS-X",
+                "Descricao": "O Puma RS-X traz uma estética futurista e amortecimento extra.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "90,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "REEBOK CLASSIC",
+                "Descricao": "O Reebok Classic é um tênis atemporal que combina estilo e conforto.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "80,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "ASICS GEL-KAYANO",
+                "Descricao": "O Asics Gel-Kayano é conhecido pelo seu suporte e estabilidade superiores.",
+                "Estrelas": 5,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "110,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "NEW BALANCE 574",
+                "Descricao": "O New Balance 574 oferece uma combinação perfeita de estilo e desempenho.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "95,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "CONVERSE CHUCK TAYLOR",
+                "Descricao": "O Converse Chuck Taylor é um clássico que nunca sai de moda.",
+                "Estrelas": 3,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "70,00",
+                "Categoria": "Tenis"
+              },
+              {
+                "Nome": "VANS OLD SKOOL",
+                "Descricao": "O Vans Old Skool oferece estilo clássico de skate e durabilidade.",
+                "Estrelas": 4,
+                "Cores": ["#0071c7", "#131112", "#f5da00"],
+                "Preco": "85,00",
+                "Categoria": "Tenis"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "Card_Deitado": [
+    {
+      "Populares_Sessao": [
+        {
+          "Filtros": ["Moletons", "Blusas"],
+          "Quantia_De_Itens_Por_Coluna": 3,
+          "Produtos": {
+            "Moletons": [
+              {
+                "Nome": "Canguru Masculino Preto",
+                "Descricao": "canguru preto com capuz, bolso frontal e tecido 100% algodão.",
+                "Estrelas": 4,
+                "Promocao": "129,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "10,83",
+                "Preco": "139,90"
+              },
+              {
+                "Nome": "Feminino Rosa Pastel",
+                "Descricao": "feminino rosa pastel com capuz e tecido macio.",
+                "Estrelas": 4,
+                "Promocao": "119,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "9,99",
+                "Preco": "129,90"
+              },
+              {
+                "Nome": "Unissex Cinza Mescla",
+                "Descricao": "unissex cinza mescla, ideal para dias frios.",
+                "Estrelas": 4,
+                "Promocao": "99,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "8,33",
+                "Preco": "109,90"
+              },
+              {
+                "Nome": "Canguru Feminino Azul Marinho",
+                "Descricao": "canguru feminino azul marinho com capuz e bolso frontal.",
+                "Estrelas": 4,
+                "Promocao": "139,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "11,66",
+                "Preco": "149,00"
+              },
+              {
+                "Nome": "Masculino Vermelho Bordô",
+                "Descricao": "masculino vermelho bordô com capuz e bolso canguru.",
+                "Estrelas": 4,
+                "Promocao": "129,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "10,83",
+                "Preco": "139,90"
+              },
+              {
+                "Nome": "Feminino Preto com Zíper",
+                "Descricao": "feminino preto com zíper e capuz, tecido leve e confortável.",
+                "Estrelas": 4,
+                "Promocao": "119,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "9,99",
+                "Preco": "129,90"
+              },
+              {
+                "Nome": "Unissex Verde Militar",
+                "Descricao": "unissex verde militar com capuz, ideal para aventuras.",
+                "Estrelas": 4,
+                "Promocao": "109,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "9,16",
+                "Preco": "119,90"
+              },
+              {
+                "Nome": "Masculino Cinza Claro",
+                "Descricao": "masculino cinza claro com capuz e bolso frontal.",
+                "Estrelas": 4,
+                "Promocao": "99,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "8,33",
+                "Preco": "109,90"
+              },
+              {
+                "Nome": "Feminino Branco",
+                "Descricao": "feminino branco com capuz e bolso canguru, tecido macio.",
+                "Estrelas": 4,
+                "Promocao": "139,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "11,66",
+                "Preco": "149,00"
+              },
+              {
+                "Nome": "Unissex Azul Claro",
+                "Descricao": "unissex azul claro com capuz e bolso frontal, tecido aconchegante.",
+                "Estrelas": 4,
+                "Promocao": "129,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "10,83",
+                "Preco": "139,90"
+              }
+            ],
+            "Blusas": [
+              {
+                "Nome": "Canguru Masculino Preto",
+                "Descricao": "canguru preto com capuz, bolso frontal e tecido 100% algodão.",
+                "Estrelas": 4,
+                "Promocao": "100,00",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "20,00",
+                "Preco": "200,00"
+              },
+              {
+                "Nome": "Feminino Rosa Pastel",
+                "Descricao": "feminino rosa pastel com capuz e tecido macio.",
+                "Estrelas": 4,
+                "Promocao": "119,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "9,99",
+                "Preco": "129,90"
+              },
+              {
+                "Nome": "Unissex Cinza Mescla",
+                "Descricao": "unissex cinza mescla, ideal para dias frios.",
+                "Estrelas": 4,
+                "Promocao": "99,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "8,33",
+                "Preco": "109,90"
+              },
+              {
+                "Nome": "Canguru Feminino Azul Marinho",
+                "Descricao": "canguru feminino azul marinho com capuz e bolso frontal.",
+                "Estrelas": 4,
+                "Promocao": "139,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "11,66",
+                "Preco": "149,00"
+              },
+              {
+                "Nome": "Masculino Vermelho Bordô",
+                "Descricao": "masculino vermelho bordô com capuz e bolso canguru.",
+                "Estrelas": 4,
+                "Promocao": "129,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "10,83",
+                "Preco": "139,90"
+              },
+              {
+                "Nome": "Feminino Preto com Zíper",
+                "Descricao": "feminino preto com zíper e capuz, tecido leve e confortável.",
+                "Estrelas": 4,
+                "Promocao": "119,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "9,99",
+                "Preco": "129,90"
+              },
+              {
+                "Nome": "Unissex Verde Militar",
+                "Descricao": "unissex verde militar com capuz, ideal para aventuras.",
+                "Estrelas": 4,
+                "Promocao": "109,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "9,16",
+                "Preco": "119,90"
+              },
+              {
+                "Nome": "Masculino Cinza Claro",
+                "Descricao": "masculino cinza claro com capuz e bolso frontal.",
+                "Estrelas": 4,
+                "Promocao": "99,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "8,33",
+                "Preco": "109,90"
+              },
+              {
+                "Nome": "Feminino Branco",
+                "Descricao": "feminino branco com capuz e bolso canguru, tecido macio.",
+                "Estrelas": 4,
+                "Promocao": "139,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "11,66",
+                "Preco": "149,00"
+              },
+              {
+                "Nome": "Unissex Azul Claro",
+                "Descricao": "unissex azul claro com capuz e bolso frontal, tecido aconchegante.",
+                "Estrelas": 4,
+                "Promocao": "129,90",
+                "Parcelamento": "12x",
+                "Valor_Parcela": "10,83",
+                "Preco": "139,90"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
